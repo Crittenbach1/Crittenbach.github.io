@@ -1,9 +1,107 @@
 ---
 layout: post
-title:  "My experience with the CLI Data Gem Project"
-date:   2017-06-08 14:22:55 +0000
+title:      "How to set up a CLI Gem "
+date:       2017-06-08 10:22:55 -0400
+permalink:  my_experience_with_the_cli_data_gem_project
 ---
 
 
-     When I was brainstorming ideas for this project, I think I was coming up with apps that were too complicated and more than this particular project was asking for.  I ended up deciding on scraping from Amazon Top Selling Books, but I realized after I had gotten far into the process that when I was trying scrape the details of each books page, there was a robot detector not allowing me to view the html on the page.  I started over by going to the Amazon best sellers page with all the departments and took same code I already had written but used it in a different way.  I was having trouble remembering to push to github so often while I was trying to figure out how I was going to get my app to work.  I knew that it was important that I keep updating my progress and stay organized.  I even thought about completely starting over by making a new gem, but I ended up just downloading an early version of my gem from git hub and started over from there using an interval timer
-on my phone that reminded me every 7 minutes to push to github.  Over all this project was a bit overwhelming for me but I am glad I got through it.  It took alot more time than my other Learn projects and I got a little discouraged but I learned a lot and it was good practice using github, scraping websites and just learning how to make a gem from scratch.
+1. Create a gem with: 
+     
+		 `$ bundle gem [name]`
+
+2.  Create a file called bin/[name].     
+      For this example I will be naming my gem teach. (bin/teach)
+			The file should look like this: 
+			
+	
+```
+#!/usr/bin/env ruby
+
+		require "bundler/setup"
+		require "teach"
+
+		Teach::CLI.new.call
+		
+```
+   When you run the app, this is the first thing that will be called.  It is calling the "call" method which we     will make in the lib folder.  
+
+3. Next add a file lib/teach/cli.rb.
+     Then add a method named call inside a Teach::CLI class.
+           
+	  The file should look like this: 
+     
+```
+     class Teach::CLI
+
+          def call
+
+          end
+
+     end
+```
+
+4. Change permissions so that you can run the app with calling "ruby"
+         1. cd bin 
+         2. look at permissions: ls -lah 
+         3. change permissions with: chmod +x teach 
+         
+			  Now you can run the app with: ./teach, or from the /teach directory it would be: bin/teach
+
+5. In the cli.rb call method, add puts "Hello World"
+         -require "teach/cli" in lib/teach.rb so that your bin/teach file can see your lib/teach/cli file
+				 -then call bin/teach 
+				 
+				 You should see "Hello World" in the terminal 
+
+6. You can then create other methods in teach/cli and call them inside of the call method.
+   
+	     class Teach::CLI
+
+          def call
+             puts "Hello World"
+
+             method_2
+             method_3
+          end
+
+          def method_2
+             puts "Hello World from method_2!"
+          end
+
+          def method_3
+             puts "Hello World from method_3!"
+          end
+  
+       end
+	
+	7. You can create a class and add attributes 
+	
+	     teach/lesson.rb
+			 
+			 attr-accessor :title, :num_of_chapters, :teacher 
+			 
+			 def initialize(title, num_of_chapters, teacher) 
+			     @title = title
+					 @num_of_chapters = num_of_characters
+					 @teacher = teacher
+			  end 
+	
+	8. From here you can create a class method and use it to send data to the cli.  For instance, if you                want to list all of the lessons, you could make an all_lessons class method that gives all the lesson          instances and their attributes.
+	
+
+
+
+
+
+
+
+
+				 
+
+
+
+
+           
+					 
+
