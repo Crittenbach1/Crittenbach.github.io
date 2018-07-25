@@ -1,10 +1,91 @@
 ---
 layout: post
-title:      "Facebook-clone Portfolio Project"
+title:      "How to set up a Sinatra app"
 date:       2017-10-11 10:13:06 -0400
 permalink:  facebook-clone_portfolio_project
 ---
 
 
-For this portfolio project I decided to create an app similar to Facebook.  For my has many relationship, I used Facebook likes and posts.  Posts belong to a user when they post on their account and they have many likes.  Likes belong to the user that likes a post.  I made a many to many class and table called PostLikes. When a user creates a post, an instance of Post is created.  When a user likes a post, an Instance of Like is created as well as PostLikes.  PostLikes has the ID of the Post and the ID of the Like.  Through Likes, you can find the individual users that like a post.  Overall, a user can signup with an email, password, date of birth, first name and last name.  This logs them into their profile page which displays their info and an input to post on their wall and the Facebook feed.  They can like a post, unlike a post, edit or delete.  They can’t edit or a delete a post that is not theirs and will be directed to an error page if they try to do so. 
+Step 1. Create a folder for your Sinatra app.  I will be calling mine "teach".
 
+     You should create the following files and folders:
+```
+> teach
+				v app 
+					 > controllers 
+					 > models
+					 > views
+				v config
+					environment.rb
+				v db
+		config.ru
+		Gemfile
+		Rakefile
+```
+
+Step 2. Add this to your config/environment.rb file:
+
+```
+ENV['SINATRA_ENV'] ||= "development"
+
+require 'bundler/setup'
+Bundler.require(:default, ENV['SINATRA_ENV'])
+
+ActiveRecord::Base.establish_connection(
+  :adapter => "sqlite3",
+  :database => "db/#{ENV['SINATRA_ENV']}.sqlite"
+)
+
+require_all 'app'
+```
+
+Step 3. Add this to your config.ru file:
+ 
+```
+require './config/environment'
+
+if ActiveRecord::Migrator.needs_migration?
+  raise 'Migrations are pending. Run `rake db:migrate` to resolve the issue.'
+end
+
+use Rack::MethodOverride
+run ApplicationController
+
+```
+
+Step 4. Add these to your gemfile: 
+
+```
+source 'https://rubygems.org'
+
+gem 'sinatra'
+gem 'activerecord', :require => 'active_record'
+gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
+gem 'rake'
+gem 'require_all'
+gem 'sqlite3'
+gem 'thin'
+gem 'shotgun'
+gem 'pry'
+gem 'bcrypt'
+
+group :test do
+  gem 'rspec'
+  gem 'capybara'
+  gem 'rack-test'
+  gem 'database_cleaner', git: 'https://github.com/bmabey/database_cleaner.git'
+end
+
+```
+
+Step 5. Run bundle install to install your gemfiles.  A file called Gemfile.lock should appear.
+
+Step 6. Lastly, add this to your rake file:
+
+```
+ENV["SINATRA_ENV"] ||= "development"
+
+require_relative './config/environment'
+require 'sinatra/activerecord/rake'
+
+```
