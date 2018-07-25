@@ -2,7 +2,7 @@
 layout: post
 title:      "How to set up a Sinatra app"
 date:       2017-10-11 10:13:06 -0400
-permalink:  facebook-clone_portfolio_project
+permalink:  sinatra_portfolio_project
 ---
 
 
@@ -11,8 +11,8 @@ Step 1. Create a folder for your Sinatra app.  I will be calling mine "teach".
      You should create the following files and folders:
 ```
 > teach
-				v app 
-					 > controllers 
+				v app
+					 > controllers
 					 > models
 					 > views
 				v config
@@ -40,7 +40,7 @@ require_all 'app'
 ```
 
 Step 3. Add this to your config.ru file:
- 
+
 ```
 require './config/environment'
 
@@ -53,7 +53,7 @@ run ApplicationController
 
 ```
 
-Step 4. Add these to your gemfile: 
+Step 4. Add these to your gemfile:
 
 ```
 source 'https://rubygems.org'
