@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "An Introduction to Javascript Scope, Hoisting & Context"
-date:       2018-09-22 05:34:22 +0000
+date:       2018-09-22 01:34:23 -0400
 permalink:  an_introduction_to_javascript_scope_hoisting_and_context
 ---
 
