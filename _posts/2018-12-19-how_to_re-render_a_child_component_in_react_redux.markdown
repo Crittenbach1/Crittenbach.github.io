@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "How to re-render a child component in React Redux"
-date:       2018-12-20 01:44:20 +0000
+date:       2018-12-19 20:44:21 -0500
 permalink:  how_to_re-render_a_child_component_in_react_redux
 ---
 
@@ -12,7 +12,7 @@ During my React Redux review I learned that to re render a child component you e
 
 For my like button I decided the most efficent solution would be to update the store to re ender everything.
 
-**Step1: **
+**Step1:**
 
 ```
   render() {
@@ -33,7 +33,7 @@ For my like button I decided the most efficent solution would be to update the s
 
 When the like button is clicked, it calls my updateStateLikes() in my child component with this.updateStateLikes();
 
-**Step2: **
+**Step2:**
 
 ```
   updateStateLikes = () => {
@@ -53,7 +53,7 @@ When the like button is clicked, it calls my updateStateLikes() in my child comp
 
 The updateStateLikes function then creates a new Article with an updated number of likes.  After that it sends this new article object to the likeArticle Action that was sent to this child component through props.
 
-**Step 3**
+**Step 3:**
 
 ```
 import fetch from 'isomorphic-fetch';
