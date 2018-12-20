@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "How to set up a Rails API for React "
-date:       2018-12-20 00:25:03 +0000
+date:       2018-12-19 19:25:04 -0500
 permalink:  how_to_set_up_a_rails_api_for_react
 ---
 
