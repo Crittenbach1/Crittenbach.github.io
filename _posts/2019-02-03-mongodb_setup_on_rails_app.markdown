@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Mongodb Setup on Rails app"
-date:       2019-02-03 07:31:10 +0000
+date:       2019-02-03 02:31:11 -0500
 permalink:  mongodb_setup_on_rails_app
 ---
 
