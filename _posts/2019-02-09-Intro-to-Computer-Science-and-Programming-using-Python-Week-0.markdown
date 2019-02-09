@@ -71,6 +71,21 @@ _Types Of Knowledge_
   > 4. count to the right 1 chair
   > 5. reach under chair and find it
 
+_A Numerical Example_
+
+* square root of a numberx is y such that y*y = x
+* recipe for deducing square root of number x 
+  > 1. Start with a guess, g
+  > 2. If g*g is close enough to x, stop and say g is the answer
+  > 3. Otherwise make a new guess by averaging g and x/g
+  > 4. Using the new guess, repeat process until close enough
+
+| g             | g * g          | x/g           | (g+x / g) / 2 |
+| -----------   | -----------    | -----------   | -----------   |
+| 3             | 9              | 5.333         | 4.1667        |
+| 4.1667        | 3.837          | 3.837         |  4.0035       |
+| 4.0035        | 3.997          | 3.997         |  4.000002     |
+
 **Machines**
 
 **Languages**
