@@ -55,7 +55,6 @@
       > * Cracking encryption schemes
     > * Some problems are fundamentally impossible to compute
       > * Predicting whether a piece of code will always halt with an answer for any input
-  ___
   
 **Knowledge**
 
