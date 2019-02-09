@@ -29,9 +29,18 @@
   
   _Simple Calculations Enough?_
   
+  * Searching the World Wide web
+    > * 45 Billion Pages; 1,000 words/page; 10 operations/word
+    > * Need 5.2 days to find something using simple operations
+  * Playing Chess
+    > * Average of 35 moves/setting; look ahead 6 moves; 1.8 Billion boards to check; 100 operations/choice
+    > * 30 minutes to decide each move
+  * Good algorithm design is also needed to accomplish a task!
   ___
 
   _Enough Storage?_
+  
+  
 
   ___
   
