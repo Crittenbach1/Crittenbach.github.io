@@ -92,9 +92,9 @@ _A Numerical Example_
 
 _What Is Recipe?_
 
-   1) sequence of simple _**steps
-   2) _**flow of control**_ process that specifies when each step is executed
-   3) a means of determining _**when to stop**_
+1. sequence of simple _**steps
+2. _**flow of control**_ process that specifies when each step is executed
+3. a means of determining _**when to stop**_
    
 Steps 1+2+3 = an _**algorithm**_!
 
