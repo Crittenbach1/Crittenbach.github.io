@@ -1,16 +1,16 @@
 
-_**Introduction**_
+__**Introduction**__
 
-_**Knowledge**_
+__**Knowledge**__
 
-_**Machines**_ 
+__**Machines**__ 
 
-_**Languages**_
+__**Languages**__
 
-_**Types**_
+__**Types**__
 
-_**Variables**_ 
+__**Variables**__
 
-_**Operators and Branching**_
+__**Operators and Branching**__
 
 
