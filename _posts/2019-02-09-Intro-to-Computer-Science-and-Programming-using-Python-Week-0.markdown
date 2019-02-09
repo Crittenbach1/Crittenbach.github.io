@@ -1,18 +1,16 @@
 
-# Introduction 
+_**Introduction**_
 
-fewf
-# Knowledge 
+_**Knowledge**_
 
+_**Machines**_ 
 
-frewfe
-# Machines 
+_**Languages**_
 
-ferwfa
+_**Types**_
 
-# Languages
-# Types 
-# Variables 
-# Operators and Branching 
+_**Variables**_ 
+
+_**Operators and Branching**_
 
 
