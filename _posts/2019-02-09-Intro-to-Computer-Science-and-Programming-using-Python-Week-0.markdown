@@ -70,6 +70,8 @@ _Types Of Knowledge_
   > 3. start from the middle section's left side
   > 4. count to the right 1 chair
   > 5. reach under chair and find it
+  
+  ---
 
 _A Numerical Example_
 
@@ -86,7 +88,19 @@ _A Numerical Example_
 | 4.1667        | 3.837          | 3.837         |  4.0035       |
 | 4.0035        | 3.997          | 3.997         |  4.000002     |
 
+---
+
+_What Is Recipe?_
+
+   1) sequence of simple steps
+   2) flow of control process that specifies when each step is executed
+   3) a means of determining when to stop
+   
+Steps 1+2+3 = an algorithm!
+
 **Machines**
+
+
 
 **Languages**
 
