@@ -50,7 +50,7 @@
   _Are There Limits?_
   
   * Despite it's speed and size, a computer does have limitations 
-    > * Some problems wtill too complex
+    > * Some problems still too complex
       > * Accurate weather prediction at a local scale
       > * Cracking encryption schemes
     > * Some problems are fundamentally impossible to compute
@@ -58,6 +58,19 @@
   ___
   
 **Knowledge**
+
+_Types Of Knowledge_
+
+* Computers know what you tell them
+* _**Declarative Knowledge**_ is statements of fact
+  > * there is candy taped to the underside of one chair
+* _**Imperative Knowledge**_ is a recipe or "how to" 
+  Computation
+  > 1. face the students at the front of the room
+  > 2. count up 3 rows
+  > 3. start from the middle section's left side
+  > 4. count to the right 1 chair
+  > 5. reach under chair and find it
 
 **Machines**
 
