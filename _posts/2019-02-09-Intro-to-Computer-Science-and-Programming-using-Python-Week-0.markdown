@@ -77,10 +77,10 @@ _A Numerical Example_
 
 * square root of a numberx is y such that y*y = x
 * recipe for deducing square root of number x 
-  > 1. Start with a guess, g
-  > 2. If g*g is close enough to x, stop and say g is the answer
-  > 3. Otherwise make a new guess by averaging g and x/g
-  > 4. Using the new guess, repeat process until close enough
+  > 1. Start with a _**guess**_, g
+  > 2. If g*g is _**close enough**_ to x, stop and say g is the answer
+  > 3. Otherwise make a _**new guess**_ by averaging g and x/g
+  > 4. Using the new guess, _**repeat**_ process until close enough
 
 | g             | g * g          | x/g           | (g+x / g) / 2 |
 | -----------   | -----------    | -----------   | -----------   |
@@ -92,11 +92,11 @@ _A Numerical Example_
 
 _What Is Recipe?_
 
-   1) sequence of simple steps
-   2) flow of control process that specifies when each step is executed
-   3) a means of determining when to stop
+   1) sequence of simple _**steps
+   2) _**flow of control**_ process that specifies when each step is executed
+   3) a means of determining _**when to stop**_
    
-Steps 1+2+3 = an algorithm!
+Steps 1+2+3 = an _**algorithm**_!
 
 **Machines**
 
