@@ -20,7 +20,7 @@
   
   * Fundamentally:
     > * performs _**calculations**_ a billion calculations per second!
-    > * _**remembers**_ results | 100's of gigabytes of storage 
+    > * _**remembers**_ results -- 100's of gigabytes of storage 
   * What kinds of calculations? 
     > * _**built-in**_ to the language 
     > * ones that _**you define**_ as the programmer 
