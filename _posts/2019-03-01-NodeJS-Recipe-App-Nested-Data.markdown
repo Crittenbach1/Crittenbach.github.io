@@ -41,13 +41,13 @@ The id is then used in the route to find which recipe to update with a new step.
   <form action="/recipes/{{_id}}/steps" method="post">
             <input type="text" name="description" >
             <button type="submit">Add</button>
-          </form>
+  </form>
 
 ```
 
 *Step 4*
 
-In routes.js I added a new router that with create a new step and save it in it's recipe's step array.
+In routes.js I added a new router that will create a new step and save it in it's recipe's step array.
 
 1. finds the recipe by it's id
 2. creates a new step object with the given description
@@ -86,7 +86,7 @@ router.post('/recipes/:id/steps', function(req, res){
 
 I added an ordered list to each recipe thats lists it's steps.
 
-In mustache to list a nested array, you add another {{#steps}} just likew the outsdie one which was {{#recipes}}.
+In mustache to list a nested array, you add another {{#steps}} just like the outside one which was {{#recipes}}.
 Then add the <li></li> with object attributes you want to display. ( {{description}} )
 
 ```
