@@ -9,6 +9,13 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
+
+#ads {
+  height: 100px;
+  margin-bottom: 100px;
+  background-color: black;
+}
+
 body {
   margin: 0;
 }
