@@ -4,6 +4,7 @@
 #ads {
   height: 100px;
   margin-bottom: 100px;
+  background-color: black;
 }
 
 .highlight pre code * {
