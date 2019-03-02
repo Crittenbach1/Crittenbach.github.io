@@ -1,11 +1,7 @@
 /* to make lines scroll instead of wrap */
 /* from http://stackoverflow.com/a/23393920 */
 
-#ads {
-  height: 100px;
-  margin-bottom: 100px;
-  background-color: black;
-}
+
 
 .highlight pre code * {
   white-space: nowrap;    // this sets all children inside to nowrap
